@@ -11,7 +11,7 @@ const handler = async (req, res) => {
     !email ||
     !email.includes("@")
   ) {
-    res.status(422).json({
+    res.status(423).json({
       message: "Validation error, missing required fields",
     });
     return;
